@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PT_MOI_w</class>
+ <widget class="QMainWindow" name="PT_MOI_w">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PercentageTransduction_MOI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="PT_MOI_t">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>311</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>Percentage Transduction</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>MOI</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Value</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="run">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>180</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Run</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>20</y>
+      <width>431</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="PT_MOI_cl">
+       <property name="text">
+        <string>Pecentage Transduction-MOI</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGraphicsView" name="PT_MOI_c"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="P_MOI_cl">
+       <property name="text">
+        <string>Poisson-MOI</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGraphicsView" name="P_MOI_c"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>311</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="P_MOI_tl">
+       <property name="text">
+        <string>Poisson-MOI</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="P_MOI_t">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>80</y>
+      <width>201</width>
+      <height>86</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="cn_s">
+       <property name="text">
+        <string>Cell number (Selection)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="cn_si"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="cn_ns">
+       <property name="text">
+        <string>Cell number (no selection)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="cn_nsi"/>
+     </item>
+    </layout>
+   </widget>
+   <zorder>PT_MOI_c</zorder>
+   <zorder>P_MOI_c</zorder>
+   <zorder>PT_MOI_cl</zorder>
+   <zorder>P_MOI_cl</zorder>
+   <zorder>P_MOI_t</zorder>
+   <zorder>P_MOI_tl</zorder>
+   <zorder>cn_s</zorder>
+   <zorder>cn_si</zorder>
+   <zorder>cn_nsi</zorder>
+   <zorder>cn_ns</zorder>
+   <zorder>PT_MOI_t</zorder>
+   <zorder>cn_ns</zorder>
+   <zorder>cn_s</zorder>
+   <zorder>run</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>cn_si</tabstop>
+  <tabstop>cn_nsi</tabstop>
+  <tabstop>run</tabstop>
+  <tabstop>PT_MOI_t</tabstop>
+  <tabstop>P_MOI_t</tabstop>
+  <tabstop>P_MOI_c</tabstop>
+  <tabstop>PT_MOI_c</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
